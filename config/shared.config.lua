@@ -18,7 +18,7 @@ CONFIG.Option = {                                           -- Option
 
     Display = {                                             -- Display
         ID = {                                              -- ไอดี
-            Enable = true                                   -- แสดง ไอดีผู้เล่น (true เท่ากับ เปิดใช้งาน | false เท่ากับ ปิดใช้งาน)
+            Enable = false                                   -- แสดง ไอดีผู้เล่น (true เท่ากับ เปิดใช้งาน | false เท่ากับ ปิดใช้งาน)
         },
 
         Name = {                                            -- ชื่อ
@@ -33,7 +33,7 @@ CONFIG.Option = {                                           -- Option
             Enable = true,                                  -- แสดง สถานะกิจกรรมผู้เล่น (true เท่ากับ เปิดใช้งาน | false เท่ากับ ปิดใช้งาน)
 
             Plate = {                                       -- ทะเบียน (ยานพาหนะ)
-                Enable = true                               -- แสดง ทะเบียนยานพาหนะ (true เท่ากับ เปิดใช้งาน | false เท่ากับ ปิดใช้งาน)
+                Enable = false                               -- แสดง ทะเบียนยานพาหนะ (true เท่ากับ เปิดใช้งาน | false เท่ากับ ปิดใช้งาน)
             }
         }
     }
@@ -41,17 +41,17 @@ CONFIG.Option = {                                           -- Option
 
 CONFIG.Discord = {                                          -- Discord
     Application = {                                         -- Application (Developer Portal: https://discord.com/developers/applications)
-        ID = 000000000000000000                             -- ID (รูปภาพตัวอย่าง: https://i.imgur.com/cWZjHB3.png)
+        ID = 1281648670529556530                             -- ID (รูปภาพตัวอย่าง: https://i.imgur.com/cWZjHB3.png)
     },
 
     Asset = {                                               -- Asset (Art Assets: https://discord.com/developers/applications/YOUR_APP_ID/rich-presence/assets)
         Logo = {                                            -- ภาพสัญลักษณ์ (ขนาดปกติ)
-            Name = 'logo-large',                            -- ชื่อ (รูปภาพตัวอย่าง: https://imgur.com/y1Amkyu.png)
+            Name = 'main_logo',                            -- ชื่อ (รูปภาพตัวอย่าง: https://imgur.com/y1Amkyu.png)
             Text = 'AZAEL - BETA SERVER'                    -- ข้อความ
         },
 
         Icon = {                                            -- ภาพสัญลักษณ์ (ขนาดเล็ก)
-            Name = 'logo-small',                            -- ชื่อ (รูปภาพตัวอย่าง: https://i.imgur.com/0STQ7rh.png)
+            Name = 'main_logo',                            -- ชื่อ (รูปภาพตัวอย่าง: https://i.imgur.com/0STQ7rh.png)
             Text = 'AZAEL - BETA SERVER'                    -- ข้อความ
         }
     },
@@ -59,13 +59,13 @@ CONFIG.Discord = {                                          -- Discord
     Button = {                                              -- Button (ปุ่ม)
         [1] = {                                             -- ปุ่มที่ 1
             Text = 'Join Discord',                          -- ข้อความ
-            URL = 'https://discord.gg/invite'               -- URL
+            URL = 'https://discord.gg/FreedomTown'               -- URL
         },
 
-        [2] = {                                             -- ปุ่มที่ 2
-            Text = 'Join Server',                           -- ข้อความ
-            URL = 'fivem://connect/127.0.0.1:30120'         -- URL
-        }
+        -- [2] = {                                             -- ปุ่มที่ 2
+        --     Text = 'Join Server',                           -- ข้อความ
+        --     URL = 'fivem://connect/127.0.0.1:30120'         -- URL
+        -- }
     }
 }
 
